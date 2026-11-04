@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* ألوان وخطوط المتجر. غيريها هون لكل متجر جديد */
+@theme {
+  --color-page: #ffffff;
+  --color-cream: #f8f4ec;      /* خلفيات ناعمة */
+  --color-ink: #1c1915;        /* النص */
+  --color-muted: #7d756a;
+  --color-gold: #b08d4f;       /* الذهبي */
+  --color-gold-dark: #8c6d36;
+  --color-line: #ece5d8;
+
+  --font-latin: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Tajawal", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-page text-ink font-sans antialiased;
+}
+
+.font-latin {
+  font-variant-numeric: lining-nums;
+}
